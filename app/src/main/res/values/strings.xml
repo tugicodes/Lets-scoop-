@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lets Scoop </string>
+    <string name="Signup">Sign up</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</string>
+    <string name="Login">Log in</string>
+    <string name="logo">logo </string>
+    <string name="Welcome_Back">Welcome Back!</string>
+    <string name="Hello_Welcome">Hello there, Welcome!</string>
+    <string name="Username_hint">Username</string>
+    <string name="Password_hint">Password</string>
+    <string name="Signup_hint">Click Here to Sign Up</string>
+    <string name="Login_hint">Click Here to Log In</string>
+    <string name="fname">Full name</string>
+    <string name="textEmail">Email</string>
+    <string name="newHere">"First scoop? Sign up here!" 🍦</string>
+    <string name="backAgain">"Back for another scoop?"</string>
+
+
+</resources>

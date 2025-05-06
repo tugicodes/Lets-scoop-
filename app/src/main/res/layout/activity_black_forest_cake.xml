@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".BlackForestCake"
+    android:background="#FFFDD0"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/blackforestcakecard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#251012"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Black Forest pic -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                app:srcCompat="@drawable/blackforest"
+                android:scaleType="centerCrop"
+                android:contentDescription="black forest cake"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black Forest Cake"
+                    android:textColor="#FFFFFF"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+
+                <!-- RatingBar  -->
+                <RatingBar
+                    android:id="@+id/blackForestRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:rating="4.5"
+                    android:isIndicator="true"
+                    style="?android:attr/ratingBarStyleSmall"/>
+
+                <!-- Description-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rich layers of moist chocolate cake sweet cherry filling, and fluffy whipped cream, all topped with chocolate shavings and juicy cherries"
+                    android:padding="25dp"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily=""
+                    android:textStyle="italic"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/blackforestPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: $10.99"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#FFD700"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"/>
+
+            <!-- Add to cart Button -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/AddToCartbtn"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FFFFFF"
+                    android:padding="10dp"
+                    android:text="Add to cart"
+                    android:textColor="#D47175"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/favStarButton"
+                    android:layout_width="83dp"
+                    android:layout_height="93dp"
+                    android:layout_marginStart="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Add to favorites"
+                    android:src="@drawable/sharp_star_border_24"
+                    app:tint="#FFD700" />
+
+            </LinearLayout>
+
+
+
+            <!-- Reviews Section -->
+            <TextView
+                android:id="@+id/reviewsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Reviews"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:paddingTop="24dp"
+                android:paddingBottom="8dp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/reviewsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⭐️⭐️⭐️⭐️⭐️ - Best cake ever! Moist and delicious."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⭐️⭐️⭐️⭐️ - Really enjoyed it. Would buy again!"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:paddingBottom="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

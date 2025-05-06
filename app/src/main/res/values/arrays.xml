@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preview_cake_names">
+        <item>Black Forest</item>
+        <item>Passion Fruit Cake</item>
+        <item>Chocolate Fudge Cake</item>
+        <item>Red Velvet</item>
+        <item>Cheesecake</item>
+
+    </string-array>
+</resources>

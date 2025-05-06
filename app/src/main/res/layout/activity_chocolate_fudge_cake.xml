@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".ChocolateFudgeCake"
+        android:background="#FFFDD0"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/chocolatefudgecakecardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#130807"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Chocolate cake pic -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    app:srcCompat="@drawable/chocolatecake"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="chocolate cake"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Title-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Moist chocolate fudge cake"
+                        android:textColor="#FFFFFF"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        />
+
+                    <!-- RatingBar  -->
+                    <RatingBar
+                        android:id="@+id/chocolatecakeRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        android:rating="4.5"
+                        android:isIndicator="true"
+                        style="?android:attr/ratingBarStyleSmall"/>
+
+                    <!-- Description-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Indulge in the rich, decadent layers of this moist chocolate fudge cake. Made with velvety chocolate and a luscious fudge filling, each bite melts in your mouth for the ultimate chocolate lover’s dream."
+                        android:padding="25dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily=""
+                        android:textStyle="italic"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/blackforestPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price: $11.99"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#FFC107"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"/>
+
+                <!-- Add to cart Button -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    >
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/AddToCartbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add to cart"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#D47175"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        style="?attr/borderlessButtonStyle"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/favStarButton"
+                        android:layout_width="83dp"
+                        android:layout_height="93dp"
+                        android:src="@drawable/sharp_star_border_24"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Add to favorites"
+                        android:layout_marginStart="16dp"
+                        app:tint="#FFD700"/>
+
+                </LinearLayout>
+
+
+
+                <!-- Reviews Section -->
+                <TextView
+                    android:id="@+id/reviewsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Reviews"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/reviewsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⭐️⭐️⭐️⭐️⭐️ - Best cake ever! Moist and delicious."
+                        android:textColor="#FFFFFF "
+                        android:textSize="14sp"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⭐️⭐️⭐️⭐️ - Really enjoyed it. Would buy again!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:paddingBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

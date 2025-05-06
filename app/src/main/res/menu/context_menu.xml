@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- For cake image -->
+    <item android:id="@+id/action_share"
+        android:title="Share cake"/>
+
+    <item android:id="@+id/action_save_image"
+        android:title="Save image"/>
+
+    <!-- For price -->
+    <item android:id="@+id/action_copy_price"
+        android:title="Copy price"/>
+
+    <!-- For reviews -->
+    <item android:id="@+id/action_report_review"
+        android:title="Report review"/>
+</menu>
